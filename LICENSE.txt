@@ -1,0 +1,12 @@
+MAW NPC Voices - terms of use
+=============================
+
+1. Code (Lua module, Python tools): free to use, copy and change. Keep this notice.
+2. English voices: generated on the author's PC with the open model Kokoro-82M (Apache-2.0),
+   voices af_heart and am_michael. Free to use with the game Might and Magic 8 / MMMerge / MAW.
+   Not allowed: selling them or passing them on under other terms.
+3. The spoken texts are the dialog texts of Might and Magic 6, 7 and 8 and of the MAW mod.
+   Might and Magic is a trademark of its owners. This is a non-commercial fan project, not made
+   or approved by them. If an owner asks us to remove a file, we will remove it.
+4. MAW is made by Malekitsu (github.com/Malekitsu/Maw-Mod-MMMerge). This add-on is not part of MAW.
+5. No warranty.

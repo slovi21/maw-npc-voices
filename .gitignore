@@ -1,0 +1,8 @@
+/Data/
+work/
+*.ogg
+*.wav
+*.zip
+__pycache__/
+*.pyc
+NPCVoicesLog.txt

@@ -1,0 +1,56 @@
+MAW NPC Voices (English) - installation
+========================================
+
+What you get
+------------
+About 8,500 spoken lines for the people of the game (greetings, topics, news, guards) for MM6, MM7,
+MM8 and MAW. Male and female NPCs have different voices. The lines were generated with Kokoro-82M.
+
+You need first
+--------------
+Might and Magic 8 (GOG) with MMMerge, the patch, Multiplayer and the MAW mod, installed in the order of
+the MAW README. The game must start and work. Close the game before you install.
+
+Install (about 670 MB)
+----------------------
+1. Unzip MAW-NPC-Voices-<version>.zip into the game folder (the folder that holds MM8.exe).
+   Answer "Yes" when Windows asks to merge folders.
+2. Start the game. Talk to an NPC. The voice plays.
+
+The mod changes no MAW file. It adds:
+  Scripts\General\zzzMaw_NPCVoices.lua
+  Data\Voices\NPC\            (the recordings)
+  Data\Voices\names.tsv, templates.tsv, pics.tsv
+
+Keys
+----
+F9  repeats the last voice (press up to 3 times within 2 seconds for the ones before).
+F10 stops the voice.
+
+Settings (optional, MAWSettings.lua in the game folder)
+-------------------------------------------------------
+Add any of these lines inside "return { ... }" to change the defaults:
+    npcVoices = false,        -- switches the voices off (default: on)
+    npcVoiceVolume = 0.8,     -- 0.0 to 1.0, relative to the game's character voices slider (default: 1.0)
+    repeatVoiceKey = 120,     -- key code of "repeat" (default: 120 = F9; the list of codes is in MAWSettings.lua)
+    stopVoiceKey = 121,       -- key code of "stop" (default: 121 = F10)
+
+"Check game files" in MAW's main menu
+-------------------------------------
+MAW's file check lists zzzMaw_NPCVoices.lua as an "unknown script". That is expected: the voices are an
+add-on, not part of MAW. Do not delete the file if you want to keep the voices.
+
+If something does not work
+--------------------------
+* Silence: check that the character voices slider in the game options is not at zero, that npcVoices is
+  not false, and that the folder Data\Voices\NPC exists.
+* Texts changed by a newer MAW version have no recording and stay silent. That is expected.
+* Error messages: NPCVoicesLog.txt in the game folder.
+* Questions and bug reports: the Issues page of github.com/slovi21/maw-npc-voices
+
+Uninstall
+---------
+Delete Scripts\General\zzzMaw_NPCVoices.lua, the folder Data\Voices\NPC and the files names.tsv,
+templates.tsv and pics.tsv in Data\Voices, and MAW-NPC-Voices-INSTALL.txt / -LICENSE.txt in the
+game folder. Nothing else was changed.
+(If MAW NPC Voices Deutsch is installed too, keep zzzMaw_NPCVoices.lua, names.tsv and pics.tsv: it uses them.)
