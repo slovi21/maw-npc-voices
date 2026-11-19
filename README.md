@@ -39,6 +39,26 @@ When you talk to an NPC, the script looks up the recording for the text on the s
 that fits the NPC (male or female). A text that a newer MAW version changed has no recording and stays silent,
 so you never hear a line that does not match the text.
 
+## Which files are changed
+
+| Part | Changed? |
+|---|---|
+| **Original game** (Might and Magic 8) | No. |
+| **MMMerge** (patch, Multiplayer, `mmmerge.T.lod`, tables, scripts) | No. |
+| **MAW** (scripts, data, `MAWSettings.lua`) | No. `MAWSettings.lua` changes only if you add one of the lines under "Advanced" yourself. |
+
+Everything the mod brings is **new files** that did not exist before:
+
+* `Scripts\General\zzzMaw_NPCVoices.lua`
+* `Data\Voices\NPC\` (the recordings) and `names.tsv`, `pics.tsv`, `templates.tsv` in `Data\Voices`
+* `MAW-NPC-Voices-EN-INSTALL.txt`, `MAW-NPC-Voices-EN-LICENSE.txt`
+* while playing: `NPCVoicesLog.txt` in the game folder
+
+If MAW NPC Voices DE is installed too, both mods share `zzzMaw_NPCVoices.lua`, `names.tsv` and `pics.tsv`.
+The files are the same in both packages, so overwriting does no harm.
+We checked this: after installing both mods, the only changed file in the whole game folder was `MAWSettings.lua`,
+and the German edition's installer made that change.
+
 ## Install
 
 1. Close the game.
