@@ -99,8 +99,7 @@ share three files; they are the same in both packages, so overwriting them does 
 ## Uninstall
 
 1. Delete `Data\Voices\NPC` and, in `Data\Voices`, the file `templates.tsv`.
-2. Delete `MAW-NPC-Voices-EN-INSTALL.txt` and `MAW-NPC-Voices-EN-LICENSE.txt` in the game folder
-   (version 1.0.0: `MAW-NPC-Voices-INSTALL.txt` and `-LICENSE.txt`).
+2. Delete `MAW-NPC-Voices-EN-INSTALL.txt` and `MAW-NPC-Voices-EN-LICENSE.txt` in the game folder.
 3. **Only if MAW NPC Voices DE is not installed:** also delete `Scripts\General\zzzMaw_NPCVoices.lua`,
    `Data\Voices\names.tsv`, `Data\Voices\pics.tsv` and `NPCVoicesLog.txt` in the game folder.
 

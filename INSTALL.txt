@@ -65,8 +65,7 @@ If something does not work
 Uninstall
 ---------
 1. Delete the folder Data\Voices\NPC and the file Data\Voices\templates.tsv.
-2. Delete MAW-NPC-Voices-EN-INSTALL.txt and MAW-NPC-Voices-EN-LICENSE.txt in the game folder
-   (version 1.0.0: MAW-NPC-Voices-INSTALL.txt and -LICENSE.txt).
+2. Delete MAW-NPC-Voices-EN-INSTALL.txt and MAW-NPC-Voices-EN-LICENSE.txt in the game folder.
 3. Only if MAW NPC Voices DE is NOT installed: also delete Scripts\General\zzzMaw_NPCVoices.lua,
    Data\Voices\names.tsv, Data\Voices\pics.tsv and NPCVoicesLog.txt.
 Nothing else was changed.

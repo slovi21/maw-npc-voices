@@ -1,23 +1,14 @@
 # Changelog
 
-## 1.0.2 (2026-11-19)
-
-- Guide rewritten: quick start, what is in the package, settings, which files change, complete uninstall list.
-- Fixed in the guide: number of texts (3,803 of 3,881), download size (about 675 MB), what NPCVoicesLog.txt holds,
-  uninstall keeps the shared files when MAW NPC Voices DE is installed.
-- Recordings and script are unchanged.
-
-## 1.0.1 (2026-11-19)
-
-- New name: MAW NPC Voices EN (was MAW NPC Voices). Download `MAW-NPC-Voices-EN-<version>.zip`.
-- The recordings and the module are unchanged.
-
-## 1.0.0 (2026-11-18)
+## 1.0 (2026-11-19)
 
 First release as a separate add-on.
 
-- 8,502 recordings for 3,803 of the 3,881 dialog texts of MM6, MM7, MM8 and MAW, male and female voices.
+- 8,502 recordings for 3,803 of the 3,881 dialog texts of MM6, MM7, MM8 and MAW, male and female voices,
+  made with Kokoro-82M.
 - Voice by the NPC's gender (name list, portrait), texts with placeholders (hire pitches, greetings with a name).
-- F9 repeats the last voice (press again for the two before it), F10 stops it.
+- F9 repeats the last line (press again within 2 seconds for the line before it, and once more for the one before
+  that), F10 stops it.
 - Settings in `MAWSettings.lua`: `npcVoices`, `npcVoiceVolume`, `repeatVoiceKey`, `stopVoiceKey`.
-- Changes no MAW file.
+- Only adds files: no file of the game, MMMerge or MAW is changed, saved games are not touched.
+- Works together with MAW NPC Voices DE.
