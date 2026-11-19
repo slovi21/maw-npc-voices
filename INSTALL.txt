@@ -1,4 +1,4 @@
-MAW NPC Voices (English) - installation
+MAW NPC Voices EN - installation
 ========================================
 
 What you get
@@ -13,7 +13,7 @@ the MAW README. The game must start and work. Close the game before you install.
 
 Install (about 670 MB)
 ----------------------
-1. Unzip MAW-NPC-Voices-<version>.zip into the game folder (the folder that holds MM8.exe).
+1. Unzip MAW-NPC-Voices-EN-<version>.zip into the game folder (the folder that holds MM8.exe).
    Answer "Yes" when Windows asks to merge folders.
 2. Start the game. Talk to an NPC. The voice plays.
 
@@ -46,11 +46,11 @@ If something does not work
   not false, and that the folder Data\Voices\NPC exists.
 * Texts changed by a newer MAW version have no recording and stay silent. That is expected.
 * Error messages: NPCVoicesLog.txt in the game folder.
-* Questions and bug reports: the Issues page of github.com/slovi21/maw-npc-voices
+* Questions and bug reports: the Issues page of github.com/slovi21/maw-npc-voices-en
 
 Uninstall
 ---------
 Delete Scripts\General\zzzMaw_NPCVoices.lua, the folder Data\Voices\NPC and the files names.tsv,
-templates.tsv and pics.tsv in Data\Voices, and MAW-NPC-Voices-INSTALL.txt / -LICENSE.txt in the
-game folder. Nothing else was changed.
-(If MAW NPC Voices Deutsch is installed too, keep zzzMaw_NPCVoices.lua, names.tsv and pics.tsv: it uses them.)
+templates.tsv and pics.tsv in Data\Voices, and MAW-NPC-Voices-EN-INSTALL.txt / -LICENSE.txt in the
+game folder (version 1.0.0: MAW-NPC-Voices-INSTALL.txt / -LICENSE.txt). Nothing else was changed.
+(If MAW NPC Voices DE is installed too, keep zzzMaw_NPCVoices.lua, names.tsv and pics.tsv: it uses them.)

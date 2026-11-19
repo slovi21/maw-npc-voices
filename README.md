@@ -1,15 +1,15 @@
-# MAW NPC Voices
+# MAW NPC Voices EN
 
 Spoken NPC dialogs for **Might and Magic 8 with MMMerge and the MAW mod**.
 About 8,500 recordings: greetings, topic answers, street news and the sayings of guards, for MM6, MM7, MM8 and MAW.
 Male and female NPCs speak with different voices.
 
 > A German edition with German texts and German voices is available as a separate mod:
-> [MAW NPC Voices Deutsch](https://github.com/slovi21/maw-npc-voices-deutsch).
+> [MAW NPC Voices DE](https://github.com/slovi21/maw-npc-voices-de).
 
 ## Download
 
-Get `MAW-NPC-Voices-<version>.zip` (about 670 MB) from the [Releases](../../releases) page.
+Get `MAW-NPC-Voices-EN-<version>.zip` (about 670 MB) from the [Releases](../../releases) page.
 `SHA256SUMS.txt` next to it lets you check the download.
 
 ## Requirements

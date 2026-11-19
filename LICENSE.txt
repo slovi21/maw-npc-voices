@@ -1,4 +1,4 @@
-MAW NPC Voices - terms of use
+MAW NPC Voices EN - terms of use
 =============================
 
 1. Code (Lua module, Python tools): free to use, copy and change. Keep this notice.

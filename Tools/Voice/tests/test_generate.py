@@ -162,7 +162,7 @@ class PackTests(unittest.TestCase):
             with zipfile.ZipFile(out) as z:
                 self.assertEqual(sorted(z.namelist()), [
                     "Data/Voices/NPC/0000000a-f.ogg", "Data/Voices/NPC/0000000a.ogg", "Data/Voices/NPC/0000000b.wav",
-                    "Data/Voices/names.tsv", "Data/Voices/pics.tsv", "Data/Voices/templates.tsv", "MAW-NPC-Voices-INSTALL.txt", "MAW-NPC-Voices-LICENSE.txt",
+                    "Data/Voices/names.tsv", "Data/Voices/pics.tsv", "Data/Voices/templates.tsv", "MAW-NPC-Voices-EN-INSTALL.txt", "MAW-NPC-Voices-EN-LICENSE.txt",
                     "Scripts/General/zzzMaw_NPCVoices.lua"])
             line = (d / "pack.zip.sha256").read_text(encoding="ascii")
             self.assertEqual(line.split()[0], hashlib.sha256(out.read_bytes()).hexdigest())

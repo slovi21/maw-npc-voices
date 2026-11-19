@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Bundle the voice pack: one zip with the recordings, names.tsv, templates.tsv and the
-Lua module, in the folder layout of the game install, plus MAW-NPC-Voices-INSTALL.txt, -LICENSE.txt and a .sha256 file.
+Lua module, in the folder layout of the game install, plus MAW-NPC-Voices-EN-INSTALL.txt, -LICENSE.txt and a .sha256 file.
 
-    python -I pack_voices.py --out ../../Data/Voices/MAW-NPC-Voices-1.0.0.zip
+    python -I pack_voices.py --out ../../Data/Voices/MAW-NPC-Voices-EN-1.0.0.zip
 
 INSTALL.txt and LICENSE.txt come from the repository root.
 Defaults: recordings, names.tsv, templates.tsv and pics.tsv from <repository>/Data/Voices, the module from
@@ -51,7 +51,7 @@ def main(argv=None):
 
     with zipfile.ZipFile(args.out, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
         for doc in docs:
-            z.write(doc, "MAW-NPC-Voices-" + doc.name)  # a prefix: the German edition has its own INSTALL.txt
+            z.write(doc, "MAW-NPC-Voices-EN-" + doc.name)  # a prefix: the German edition has its own INSTALL.txt
         z.write(args.module, "Scripts/General/zzzMaw_NPCVoices.lua")
         z.write(names, "Data/Voices/names.tsv")
         z.write(patterns, "Data/Voices/templates.tsv")

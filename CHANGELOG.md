@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (2026-11-19)
+
+- New name: MAW NPC Voices EN (was MAW NPC Voices). Download `MAW-NPC-Voices-EN-<version>.zip`.
+- The recordings and the module are unchanged.
+
 ## 1.0.0 (2026-11-18)
 
 First release as a separate add-on.

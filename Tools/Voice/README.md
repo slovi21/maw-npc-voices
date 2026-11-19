@@ -25,7 +25,7 @@ in game: text about to be shown ─CRC32 of the normalized text = key─► file
 
 ## Quick start
 
-The voice pack is the release download `MAW-NPC-Voices-<version>.zip` of this
+The voice pack is the release download `MAW-NPC-Voices-EN-<version>.zip` of this
 repository; `INSTALL.txt` in the repository root tells how to install it. The
 recordings are not part of the Git repository; build the zip with
 `pack_voices.py` (last command under "Rebuilding the audio").
