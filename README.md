@@ -25,6 +25,14 @@ The mod only adds files. It changes no file of the game, of MMMerge or of MAW, a
 | the game in German, with German voices | [MAW NPC Voices DE](https://github.com/slovi21/maw-npc-voices-de) |
 | to switch between German and English in the game, both with voices | both mods; they work together |
 
+**How the two mods differ:**
+
+| | EN mod (this one) | DE mod |
+|---|---|---|
+| Who made the voices? | we did, with the free AI speech program Kokoro | NPC voices: we did, with the AI ElevenLabs; hero voices: the original German game |
+| What does the installer create? | nothing, there is none | the parts taken from your German MM8 (original texts and hero voices), because we may not share them |
+| Download | about 675 MB | about 430 MB |
+
 ## Requirements
 
 * **Might and Magic 8 with MMMerge and MAW**, installed as the [MAW guide](https://github.com/Malekitsu/Maw-Mod-MMMerge)
