@@ -1,56 +1,74 @@
 MAW NPC Voices EN - installation
-========================================
+================================
 
 What you get
 ------------
-About 8,500 spoken lines for the people of the game (greetings, topics, news, guards) for MM6, MM7,
-MM8 and MAW. Male and female NPCs have different voices. The lines were generated with Kokoro-82M.
+The people of Might and Magic 8 with MMMerge and MAW speak their lines out loud: greetings, answers, street news
+and guards, in all three worlds (MM6, MM7, MM8) and in the additions of MAW. 8,502 recordings cover 3,803 of the
+3,881 different dialog texts. Male and female NPCs have different voices. The lines were made with Kokoro-82M.
+The mod only adds files. It does not touch your saved games.
 
 You need first
 --------------
-Might and Magic 8 (GOG) with MMMerge, the patch, Multiplayer and the MAW mod, installed in the order of
-the MAW README. The game must start and work. Close the game before you install.
+* Might and Magic 8 with MMMerge and MAW, installed as the MAW guide describes. The game must start and work.
+* Your game folder: the folder that holds MM8.exe (right-click the game's shortcut, "Open file location").
 
-Install (about 670 MB)
+Install (about 675 MB)
 ----------------------
-1. Unzip MAW-NPC-Voices-EN-<version>.zip into the game folder (the folder that holds MM8.exe).
-   Answer "Yes" when Windows asks to merge folders.
-2. Start the game. Talk to an NPC. The voice plays.
+1. Close the game.
+2. Unzip MAW-NPC-Voices-EN-<version>.zip into the game folder. Answer "Yes" if Windows asks to merge folders
+   or replace files.
+3. Start the game and talk to someone. The voice plays.
 
-The mod changes no MAW file. It adds:
-  Scripts\General\zzzMaw_NPCVoices.lua
-  Data\Voices\NPC\            (the recordings)
-  Data\Voices\names.tsv, templates.tsv, pics.tsv
+The mod adds:
+  Scripts\General\zzzMaw_NPCVoices.lua         (the script that plays the voices)
+  Data\Voices\NPC\                             (the recordings)
+  Data\Voices\names.tsv, pics.tsv              (man or woman, by name and portrait)
+  Data\Voices\templates.tsv                    (texts with changing names or numbers)
+  MAW-NPC-Voices-EN-INSTALL.txt, -LICENSE.txt  (this guide and the terms of use)
+  NPCVoicesLog.txt                             (written while you play: every dialog text, played or missing)
+It changes no file of the game, of MMMerge or of MAW.
+
+Settings in the game
+--------------------
+Volume: the voices follow the voice volume slider in the game's options.
+On / off: this mod has no settings page. With MAW NPC Voices DE installed too, its page "Sprache / Language"
+(game options, page through MAW's extra pages with the arrows) has "Voice output: on / off". Otherwise see below.
 
 Keys
 ----
-F9  repeats the last voice (press up to 3 times within 2 seconds for the ones before).
-F10 stops the voice.
+F9  plays the last line again. Press F9 again within 2 seconds for the line before it, once more for the one before that.
+F10 stops the voice. Otherwise a long text keeps playing even after you have closed the conversation.
 
-Settings (optional, MAWSettings.lua in the game folder)
--------------------------------------------------------
-Add any of these lines inside "return { ... }" to change the defaults:
+Advanced (MAWSettings.lua in the game folder: add a line inside "return { ... }", then restart the game)
+-------------------------------------------------------------------------------------------------------
     npcVoices = false,        -- switches the voices off (default: on)
-    npcVoiceVolume = 0.8,     -- 0.0 to 1.0, relative to the game's character voices slider (default: 1.0)
-    repeatVoiceKey = 120,     -- key code of "repeat" (default: 120 = F9; the list of codes is in MAWSettings.lua)
-    stopVoiceKey = 121,       -- key code of "stop" (default: 121 = F10)
+    npcVoiceVolume = 0.8,     -- 0.0 to 1.0, relative to the voice slider (default: 1.0)
+    repeatVoiceKey = 120,     -- another key instead of F9 (the key codes are listed in MAWSettings.lua)
+    stopVoiceKey = 121,       -- another key instead of F10
+If MAW's key settings page has two free places, the keys appear there ("VOICE AGAIN", "VOICE STOP") and are set
+there instead. With MAW 4.5 there is no free place.
 
 "Check game files" in MAW's main menu
 -------------------------------------
-MAW's file check lists zzzMaw_NPCVoices.lua as an "unknown script". That is expected: the voices are an
-add-on, not part of MAW. Do not delete the file if you want to keep the voices.
+MAW's file check lists zzzMaw_NPCVoices.lua as an "unknown script". That is expected: the voices are an add-on,
+not part of MAW. Do not delete the file if you want to keep the voices.
 
 If something does not work
 --------------------------
-* Silence: check that the character voices slider in the game options is not at zero, that npcVoices is
-  not false, and that the folder Data\Voices\NPC exists.
-* Texts changed by a newer MAW version have no recording and stay silent. That is expected.
-* Error messages: NPCVoicesLog.txt in the game folder.
-* Questions and bug reports: the Issues page of github.com/slovi21/maw-npc-voices-en
+* No voice: is the voice slider in the game options above zero? Did you add npcVoices = false?
+  Does the folder Data\Voices\NPC exist?
+* Some lines are silent: texts that a newer MAW version changed, and a few texts with changing names or numbers,
+  have no recording. That is expected.
+* Report a problem on the Issues page of github.com/slovi21/maw-npc-voices-en and attach NPCVoicesLog.txt.
 
 Uninstall
 ---------
-Delete Scripts\General\zzzMaw_NPCVoices.lua, the folder Data\Voices\NPC and the files names.tsv,
-templates.tsv and pics.tsv in Data\Voices, and MAW-NPC-Voices-EN-INSTALL.txt / -LICENSE.txt in the
-game folder (version 1.0.0: MAW-NPC-Voices-INSTALL.txt / -LICENSE.txt). Nothing else was changed.
-(If MAW NPC Voices DE is installed too, keep zzzMaw_NPCVoices.lua, names.tsv and pics.tsv: it uses them.)
+1. Delete the folder Data\Voices\NPC and the file Data\Voices\templates.tsv.
+2. Delete MAW-NPC-Voices-EN-INSTALL.txt and MAW-NPC-Voices-EN-LICENSE.txt in the game folder
+   (version 1.0.0: MAW-NPC-Voices-INSTALL.txt and -LICENSE.txt).
+3. Only if MAW NPC Voices DE is NOT installed: also delete Scripts\General\zzzMaw_NPCVoices.lua,
+   Data\Voices\names.tsv, Data\Voices\pics.tsv and NPCVoicesLog.txt.
+Nothing else was changed.
+
+This is a fan project. It is not made or approved by the owners of Might and Magic. See MAW-NPC-Voices-EN-LICENSE.txt.
